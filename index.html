@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mela Meliton — Productor de Eventos y Contenidos</title>
-  <meta property="og:title" content="Mela Meliton — Productor de Eventos y Contenidos" />
-  <meta property="og:description" content="20+ años produciendo eventos, experiencias y contenido en Europa y LATAM." />
+  <title>Mela Meliton — Project Manager</title>
+  <meta property="og:title" content="Mela Meliton — Project Manager" />
+  <meta property="og:description" content="Project Manager con trayectoria en entornos internacionales y multisectoriales." />
   <meta property="og:url" content="https://melamelitonproductor.pages.dev/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Mela Meliton — Productor de Eventos y Contenidos" />
-  <meta name="twitter:description" content="20+ años produciendo eventos, experiencias y contenido en Europa y LATAM." />
+  <meta name="twitter:title" content="Mela Meliton — Project Manager" />
+  <meta name="twitter:description" content="Project Manager con trayectoria en entornos internacionales y multisectoriales." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;700;900&family=Syne:wght@400;700;800&family=DM+Sans:wght@400;700;900&family=Outfit:wght@400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
   <style>
@@ -236,6 +236,14 @@
       letter-spacing: .12em; text-transform: uppercase;
     }
 
+    .hero-profile {
+      font-size: 13.5px;
+      font-weight: 400;
+      color: rgba(255,255,255,.60);
+      line-height: 1.65;
+      max-width: 560px;
+      margin-top: 20px;
+    }
     /* ─────────────────────────────────────────
        SLIDE 2 — EXPERTISE
     ───────────────────────────────────────── */
@@ -343,7 +351,6 @@
 
     .accord-item {
       border-bottom: 1px solid rgba(255,255,255,.08);
-      cursor: pointer;
     }
     .accord-item:first-child { border-top: 1px solid rgba(255,255,255,.08); }
 
@@ -356,7 +363,7 @@
       user-select: none;
       transition: opacity .2s;
     }
-    .accord-header:hover { opacity: .75; }
+
 
     .accord-dates {
       font-size: 11px; font-weight: 500;
@@ -370,19 +377,13 @@
     .accord-company {
       font-size: 11.5px; color: rgba(255,255,255,.72); letter-spacing: .03em;
     }
-    .accord-chevron {
-      font-size: 11px; color: var(--accent);
-      transition: transform .3s; flex-shrink: 0;
-    }
-    .accord-item.open .accord-chevron { transform: rotate(180deg); }
 
     .accord-body {
-      max-height: 0;
       overflow: hidden;
-      transition: max-height .4s ease;
       padding-left: 158px;
     }
-    .accord-item.open .accord-body { max-height: 400px; }
+    .accord-body { max-height: none; }
+    .accord-item.open .accord-body { max-height: none; }
 
     .accord-list {
       list-style: none;
@@ -481,6 +482,7 @@
       .hero-inner { position: static; flex-direction: column; padding: 0 24px; padding-top: 80px; padding-bottom: 40px; gap: 12px; align-items: center; justify-content: center; }
       .hero-photo-wrap { order: -1; position: static; width: 35vw; aspect-ratio: 1/1; margin: 0 auto 8px; }
       .hero-text { text-align: center; width: 100%; }
+      .hero-profile { font-size: 12.5px; max-width: 100%; }
       .hero-name { font-size:clamp(40px,13vw,58px); }
 
       #s2 { align-items: flex-start; height: auto; min-height: 100vh; padding: 80px 0 60px; }
@@ -549,11 +551,14 @@
       <div class="hero-text">
         <h1 class="hero-name fu">Mela<br/><span>Melitón</span></h1>
         <p class="hero-profession fu d1" data-i18n="hero.profession">
-          Productor. Eventos y Contenido.
+          Project Manager.
         </p>
         <div class="hero-tag fu d2">Barcelona</div>
+        <p class="hero-profile fu d3" data-i18n="hero.profile">
+          Project Manager con trayectoria en entornos internacionales y multisectoriales — medios de comunicación, música, entretenimiento y tecnología. Gestiono proyectos end-to-end — equipos, presupuestos, proveedores, cronogramas, contenidos — y trabajo igual de bien en remoto que en presencial. Recientemente incorporé IA agéntica como capa operativa: diseño flujos y herramientas que mejoran la performance de los proyectos y los equipos.
+        </p>
       </div>
-      <div class="hero-photo-wrap fu d3">
+      <div class="hero-photo-wrap fu d4">
         <img class="hero-photo" src="profile_bw.png" alt="Mela Melitón" />
       </div>
     </div>
@@ -600,146 +605,147 @@
       <div class="section-label fu" style="padding-top: 80px; flex-shrink:0;" data-i18n="s3.label">Trayectoria</div>
       <div class="trayec-scroll fu d1">
 
-        <div class="accord-item" onclick="toggleAccord(this)">
+        <div class="accord-item">
           <div class="accord-header">
-            <div class="accord-dates">2025 – 2026</div>
+            <div class="accord-dates">2023 – Presente</div>
             <div class="accord-title-wrap">
-              <div class="accord-role" data-i18n="s3.j1.role">Events Manager</div>
-              <div class="accord-company" data-i18n="s3.j1.company">Polkadot Blockchain Academy — Worldwide</div>
+              <div class="accord-role" data-i18n="s3.j1.role">Product Manager & AI Lead</div>
+              <div class="accord-company" data-i18n="s3.j1.company">K10 Mobility</div>
             </div>
-            <span class="accord-chevron">▼</span>
           </div>
           <div class="accord-body">
             <ul class="accord-list" data-i18n="s3.j1.body">
-              <li>Producción integral de 2 ediciones del PBA Campus (Suiza e Indonesia): +200 participantes internacionales, 3 tracks académicos simultáneos y más de 10 actividades sociales por edición.</li>
-              <li>Coordinación logística end-to-end en dos continentes: scouting de venues, alojamiento, catering, transporte y gestión de proveedores locales.</li>
-              <li>Gestión de presupuesto y coordinación de equipos de hasta 20 personas en modalidad remote-first con múltiples husos horarios.</li>
-              <li>Supervisión de producción audiovisual, grabaciones, streaming y entregables multimedia para plataformas digitales.</li>
-              <li>Desarrollo de identidad visual, documentación operativa y reporting post-evento.</li>
+              <li>Desarrollo de Kai, el agente conversacional de ventas integrado con el sistema de reservas.</li>
+              <li>Diseño de flujos de producción con IA generativa y agéntica para la creación de contenido, la gestión de campañas en Meta Ads y la atención al cliente, mejorando la eficiencia operativa.</li>
+              <li>Estrategia y gestión del ecosistema de contenidos en redes sociales (Instagram, Facebook): planificación editorial, producción, publicación y seguimiento de rendimiento.</li>
+              <li>Coordinación directa con los equipos de operaciones y marketing para alinear la comunicación y las campañas de captación con la realidad del servicio.</li>
             </ul>
           </div>
         </div>
 
-        <div class="accord-item" onclick="toggleAccord(this)">
+        <div class="accord-item">
           <div class="accord-header">
-            <div class="accord-dates">2023 – 2025</div>
+            <div class="accord-dates">Mar 2025 – Ene 2026</div>
             <div class="accord-title-wrap">
-              <div class="accord-role" data-i18n="s3.j2.role">Coordinador de Plataforma</div>
-              <div class="accord-company" data-i18n="s3.j2.company">Ibiza Global Radio — Ibiza</div>
+              <div class="accord-role" data-i18n="s3.j2.role">Events Project Manager</div>
+              <div class="accord-company" data-i18n="s3.j2.company">Polkadot Blockchain Academy — Worldwide</div>
             </div>
-            <span class="accord-chevron">▼</span>
           </div>
           <div class="accord-body">
             <ul class="accord-list" data-i18n="s3.j2.body">
-              <li>Coordinación de producción de contenidos para plataforma con audiencia global de 1M: 2 emisoras FM, canal de TV y plataforma de streaming.</li>
-              <li>Gestión de comunicación con artistas, DJs, hosts, periodistas y creadores externos, alineando dirección editorial y cronogramas.</li>
-              <li>Diseño y coordinación de programación, musicalización y guiones de contenido para las emisoras.</li>
-              <li>Coordinación de transmisiones en directo y cobertura audiovisual del festival anual.</li>
-              <li>Gestión del equipo técnico inhouse y logística de producción. (Simultáneo con adLIB! hasta Feb 2024)</li>
+              <li>Coordinación integral de campus educativos internacionales sobre blockchain y Web3 en Europa y Asia: programas de 4 semanas, +200 participantes de distintos países y culturas, 3 tracks académicos simultáneos y más de 10 actividades complementarias por edición.</li>
+              <li>Gestión logística end-to-end en múltiples continentes: selección y negociación de proveedores, alojamiento, catering, transporte y operación en entornos culturalmente diversos.</li>
+              <li>Desarrollo de identidad visual y concepto.</li>
+              <li>Liderazgo de equipos de más de 50 personas en modalidad remote-first y múltiples zonas horarias; gestión de presupuesto y reporting post-proyecto.</li>
+              <li>Supervisión de producción audiovisual, streaming y entregables multimedia para plataformas digitales.</li>
             </ul>
           </div>
         </div>
 
-        <div class="accord-item" onclick="toggleAccord(this)">
+        <div class="accord-item">
           <div class="accord-header">
-            <div class="accord-dates">2022 – 2023</div>
+            <div class="accord-dates">Jul 2023 – Mar 2025</div>
             <div class="accord-title-wrap">
-              <div class="accord-role" data-i18n="s3.j3.role">Head of Production</div>
-              <div class="accord-company" data-i18n="s3.j3.company">adLIB! — América Latina · Europa</div>
+              <div class="accord-role" data-i18n="s3.j3.role">Project Manager</div>
+              <div class="accord-company" data-i18n="s3.j3.company">Ibiza Global Radio — Ibiza</div>
             </div>
-            <span class="accord-chevron">▼</span>
           </div>
           <div class="accord-body">
             <ul class="accord-list" data-i18n="s3.j3.body">
-              <li>Producción de 2 ediciones de campus académicos itinerantes y múltiples eventos en América Latina y Europa: presentaciones de producto, meetups, conferencias y retreats, hasta 500 asistentes.</li>
-              <li>Gestión integral de formato, espacios, contenidos, identidad visual, logística, hospitality y operación diaria.</li>
-              <li>Coordinación de equipos de hasta 20 personas, cronogramas, presupuestos y reporting post-evento.</li>
+              <li>Coordinación de producción y operaciones para plataforma con audiencia global de 1M: 2 emisoras FM, canal de TV y plataforma de streaming.</li>
+              <li>Diseño y coordinación de programación, musicalización y contenidos editoriales para las emisoras.</li>
+              <li>Gestión de agenda y coordinación con más de 30 colaboradores externos (artistas, DJs, periodistas, creadores), alineando cronogramas y directrices editoriales.</li>
+              <li>Liderazgo del equipo técnico interno para transmisiones en directo y coberturas especiales.</li>
+              <li>Coordinación de logística de producción y cobertura audiovisual del festival anual.</li>
             </ul>
           </div>
         </div>
 
-        <div class="accord-item" onclick="toggleAccord(this)">
+        <div class="accord-item">
           <div class="accord-header">
-            <div class="accord-dates">2021 – 2022</div>
+            <div class="accord-dates">Mar 2022 – Feb 2024</div>
             <div class="accord-title-wrap">
-              <div class="accord-role" data-i18n="s3.j4.role">Coordinador de Producción</div>
-              <div class="accord-company" data-i18n="s3.j4.company">Accelerate Podcast — Facebook / Collage Agency</div>
+              <div class="accord-role" data-i18n="s3.j4.role">Head of Production</div>
+              <div class="accord-company" data-i18n="s3.j4.company">adLIB! — América Latina · Europa</div>
             </div>
-            <span class="accord-chevron">▼</span>
           </div>
           <div class="accord-body">
             <ul class="accord-list" data-i18n="s3.j4.body">
-              <li>Coordinación integral de 11 episodios del podcast oficial de Facebook México para ejecutivos de empresas que utilizan herramientas de Meta.</li>
-              <li>Gestión de timelines, agendas, host, invitados de alto perfil, postproducción y distribución digital.</li>
+              <li>Producción y coordinación de campus y eventos itinerantes para el sector blockchain y Web3 en América Latina y Europa: hasta 500 participantes por edición.</li>
+              <li>Planificación integral de formato, logística, hospitality y operación diaria.</li>
+              <li>Desarrollo de identidad de proyecto, contenidos y materiales de comunicación.</li>
+              <li>Coordinación de equipos de hasta 20 personas; gestión de cronogramas, presupuestos y reporting de cierre.</li>
             </ul>
           </div>
         </div>
 
-        <div class="accord-item" onclick="toggleAccord(this)">
+        <div class="accord-item">
           <div class="accord-header">
-            <div class="accord-dates">2010 – 2020</div>
+            <div class="accord-dates">2021</div>
             <div class="accord-title-wrap">
-              <div class="accord-role" data-i18n="s3.j5.role">Coordinador General</div>
-              <div class="accord-company" data-i18n="s3.j5.company">Delta 90.3 FM · Led.fm — Buenos Aires</div>
+              <div class="accord-role" data-i18n="s3.j5.role">Coordinador de Producción</div>
+              <div class="accord-company" data-i18n="s3.j5.company">Accelerate Podcast by Meta (Collage Agency)</div>
             </div>
-            <span class="accord-chevron">▼</span>
           </div>
           <div class="accord-body">
             <ul class="accord-list" data-i18n="s3.j5.body">
-              <li>Coordinación general de programación, musicalización y equipos artísticos, técnicos, operativos y comerciales de Delta 90.3 FM, incluyendo hosts y periodistas.</li>
-              <li>Producción de eventos en vivo, activaciones especiales y transmisiones en directo de conciertos y festivales.</li>
-              <li>Dirección artística y operativa en Led.fm: diseño de formato, programación y coordinación de equipos. (Simultáneo desde 2013)</li>
+              <li>Coordinación integral de 11 ediciones del podcast oficial de Meta México para ejecutivos de empresas que utilizan herramientas de Meta.</li>
+              <li>Gestión de timelines, agendas y confirmación de invitados ejecutivos de alto perfil.</li>
+              <li>Supervisión de postproducción y distribución digital multiplataforma.</li>
             </ul>
           </div>
         </div>
 
-        <div class="accord-item" onclick="toggleAccord(this)">
+        <div class="accord-item">
           <div class="accord-header">
-            <div class="accord-dates">2007 – 2010</div>
+            <div class="accord-dates">Mar 2010 – Dic 2020</div>
             <div class="accord-title-wrap">
-              <div class="accord-role" data-i18n="s3.j6.role">Productor de Eventos Culturales</div>
-              <div class="accord-company" data-i18n="s3.j6.company">Eurínome Agencia — Buenos Aires</div>
+              <div class="accord-role" data-i18n="s3.j6.role">Project Manager</div>
+              <div class="accord-company" data-i18n="s3.j6.company">Delta 90.3 FM · Buenos Aires</div>
+              <div class="accord-company" style="font-style:italic; font-size:10.5px; margin-top:2px;" data-i18n="s3.j6.note">Simultáneo con Led.fm: 2013 – 2021</div>
             </div>
-            <span class="accord-chevron">▼</span>
           </div>
           <div class="accord-body">
             <ul class="accord-list" data-i18n="s3.j6.body">
-              <li>Producción de eventos culturales para el Gobierno de la Provincia de Buenos Aires y la Ciudad Autónoma de Buenos Aires.</li>
-              <li>Coordinación artística, logística, hospitality y producción en vivo.</li>
+              <li>Coordinación de producción y operaciones de emisora musical: programación, musicalización y contenidos en directo.</li>
+              <li>Gestión de agenda editorial y alineamiento de directrices con el equipo artístico.</li>
+              <li>Coordinación de equipos artísticos, técnicos, operativos y comerciales (hasta 15 personas).</li>
+              <li>Producción de transmisiones en directo, activaciones especiales y coberturas de conciertos y festivales de gran formato.</li>
             </ul>
           </div>
         </div>
 
-        <div class="accord-item" onclick="toggleAccord(this)">
+        <div class="accord-item">
           <div class="accord-header">
-            <div class="accord-dates">2004 – 2007</div>
+            <div class="accord-dates">2013 – 2021</div>
             <div class="accord-title-wrap">
-              <div class="accord-role" data-i18n="s3.j7.role">Director Artístico</div>
-              <div class="accord-company" data-i18n="s3.j7.company">Kabul 107.9 FM & Spika 103.1 FM — Buenos Aires</div>
+              <div class="accord-role" data-i18n="s3.j7.role">Product Owner</div>
+              <div class="accord-company" data-i18n="s3.j7.company">Led.fm — Plataforma de Radio Digital</div>
+              <div class="accord-company" style="font-style:italic; font-size:10.5px; margin-top:2px;" data-i18n="s3.j7.note">Simultáneo con Delta 90.3 FM</div>
             </div>
-            <span class="accord-chevron">▼</span>
           </div>
           <div class="accord-body">
             <ul class="accord-list" data-i18n="s3.j7.body">
-              <li>Coordinación general de programación, musicalización y equipos artísticos, técnicos, operativos y comerciales, incluyendo hosts y periodistas.</li>
-              <li>Producción de eventos en vivo, activaciones especiales y transmisiones en directo de conciertos y festivales.</li>
+              <li>Gestión artística y operativa: diseño de formato y programación de plataforma de radio digital.</li>
+              <li>Coordinación de equipos artísticos, técnicos y comerciales.</li>
+              <li>Desarrollo del catálogo musical e identidad editorial de la plataforma.</li>
             </ul>
           </div>
         </div>
 
-        <div class="accord-item" onclick="toggleAccord(this)">
+        <div class="accord-item">
           <div class="accord-header">
-            <div class="accord-dates">2001 – 2004</div>
+            <div class="accord-dates">Ene 2008 – Mar 2013</div>
             <div class="accord-title-wrap">
-              <div class="accord-role" data-i18n="s3.j8.role">Productor General</div>
-              <div class="accord-company" data-i18n="s3.j8.company">Metrodance 95.1 FM — Buenos Aires</div>
+              <div class="accord-role" data-i18n="s3.j8.role">Productor de Eventos</div>
+              <div class="accord-company" data-i18n="s3.j8.company">Eurínome (Agencia) · Buenos Aires</div>
             </div>
-            <span class="accord-chevron">▼</span>
           </div>
           <div class="accord-body">
             <ul class="accord-list" data-i18n="s3.j8.body">
-              <li>Coordinación general de programación, musicalización y equipos artísticos, técnicos, operativos y comerciales, incluyendo hosts y periodistas.</li>
-              <li>Producción de eventos en vivo, activaciones especiales y transmisiones en directo de conciertos y festivales.</li>
+              <li>Producción de eventos culturales para el Gobierno de la Provincia de Buenos Aires y la Ciudad Autónoma de Buenos Aires.</li>
+              <li>Coordinación artística y logística: gestión de artistas, técnicos, venues y proveedores.</li>
+              <li>Operación en vivo: montaje, supervisión de producción y desmontaje de eventos de gran formato.</li>
             </ul>
           </div>
         </div>
@@ -802,8 +808,9 @@
   ──────────────────────────────────────── */
   const T = {
     es: {
-      'title':           'Mela Meliton — Productor de Eventos y Contenidos',
-      'hero.profession': 'Productor. Eventos y Contenido.',
+      'title':           'Mela Meliton — Project Manager',
+      'hero.profession': 'Project Manager.',
+      'hero.profile':    'Project Manager con trayectoria en entornos internacionales y multisectoriales — medios de comunicación, música, entretenimiento y tecnología. Gestiono proyectos end-to-end — equipos, presupuestos, proveedores, cronogramas, contenidos — y trabajo igual de bien en remoto que en presencial. Recientemente incorporé IA agéntica como capa operativa: diseño flujos y herramientas que mejoran la performance de los proyectos y los equipos.',
       's2.label':        'Especialidades',
       's2.i1.title':     'Producción<br/><span>Eventos en Vivo</span>',
       's2.i1.tags':      'Conciertos · Conferencias · Summits<br/>Festivales · Retreats<br/>Europa · LATAM · Asia',
@@ -816,30 +823,32 @@
       's2.i5.title':     'Gestión<br/><span>Artística</span>',
       's2.i5.tags':      'Artistas · Speakers<br/>Hospitality · Backstage',
       's3.label':        'Trayectoria',
-      's3.j1.role':      'Events Manager',
-      's3.j1.company':   'Polkadot Blockchain Academy — Worldwide',
-      's3.j1.body':      '<li>Producción integral de 2 ediciones del PBA Campus (Suiza e Indonesia): +200 participantes internacionales, 3 tracks académicos simultáneos y más de 10 actividades sociales por edición.</li><li>Coordinación logística end-to-end en dos continentes: scouting de venues, alojamiento, catering, transporte y gestión de proveedores locales.</li><li>Gestión de presupuesto y coordinación de equipos de hasta 20 personas en modalidad remote-first con múltiples husos horarios.</li><li>Supervisión de producción audiovisual, grabaciones, streaming y entregables multimedia para plataformas digitales.</li><li>Desarrollo de identidad visual, documentación operativa y reporting post-evento.</li>',
-      's3.j2.role':      'Coordinador de Plataforma',
-      's3.j2.company':   'Ibiza Global Radio — Ibiza',
-      's3.j2.body':      '<li>Coordinación de producción de contenidos para plataforma con audiencia global de 1M: 2 emisoras FM, canal de TV y plataforma de streaming.</li><li>Gestión de comunicación con artistas, DJs, hosts, periodistas y creadores externos, alineando dirección editorial y cronogramas.</li><li>Diseño y coordinación de programación, musicalización y guiones de contenido para las emisoras.</li><li>Coordinación de transmisiones en directo y cobertura audiovisual del festival anual.</li><li>Gestión del equipo técnico inhouse y logística de producción. (Simultáneo con adLIB! hasta Feb 2024)</li>',
-      's3.j3.role':      'Head of Production',
-      's3.j3.company':   'adLIB! — América Latina · Europa',
-      's3.j3.body':      '<li>Producción de 2 ediciones de campus académicos itinerantes y múltiples eventos en América Latina y Europa: presentaciones de producto, meetups, conferencias y retreats, hasta 500 asistentes.</li><li>Gestión integral de formato, espacios, contenidos, identidad visual, logística, hospitality y operación diaria.</li><li>Coordinación de equipos de hasta 20 personas, cronogramas, presupuestos y reporting post-evento.</li>',
-      's3.j4.role':      'Coordinador de Producción',
-      's3.j4.company':   'Accelerate Podcast — Facebook / Collage Agency',
-      's3.j4.body':      '<li>Coordinación integral de 11 episodios del podcast oficial de Facebook México para ejecutivos de empresas que utilizan herramientas de Meta.</li><li>Gestión de timelines, agendas, host, invitados de alto perfil, postproducción y distribución digital.</li>',
-      's3.j5.role':      'Coordinador General',
-      's3.j5.company':   'Delta 90.3 FM · Led.fm — Buenos Aires',
-      's3.j5.body':      '<li>Coordinación general de programación, musicalización y equipos artísticos, técnicos, operativos y comerciales de Delta 90.3 FM, incluyendo hosts y periodistas.</li><li>Producción de eventos en vivo, activaciones especiales y transmisiones en directo de conciertos y festivales.</li><li>Dirección artística y operativa en Led.fm: diseño de formato, programación y coordinación de equipos. (Simultáneo desde 2013)</li>',
-      's3.j6.role':      'Productor de Eventos Culturales',
-      's3.j6.company':   'Eurínome Agencia — Buenos Aires',
-      's3.j6.body':      '<li>Producción de eventos culturales para el Gobierno de la Provincia de Buenos Aires y la Ciudad Autónoma de Buenos Aires.</li><li>Coordinación artística, logística, hospitality y producción en vivo.</li>',
-      's3.j7.role':      'Director Artístico',
-      's3.j7.company':   'Kabul 107.9 FM & Spika 103.1 FM — Buenos Aires',
-      's3.j7.body':      '<li>Coordinación general de programación, musicalización y equipos artísticos, técnicos, operativos y comerciales, incluyendo hosts y periodistas.</li><li>Producción de eventos en vivo, activaciones especiales y transmisiones en directo de conciertos y festivales.</li>',
-      's3.j8.role':      'Productor General',
-      's3.j8.company':   'Metrodance 95.1 FM — Buenos Aires',
-      's3.j8.body':      '<li>Coordinación general de programación, musicalización y equipos artísticos, técnicos, operativos y comerciales, incluyendo hosts y periodistas.</li><li>Producción de eventos en vivo, activaciones especiales y transmisiones en directo de conciertos y festivales.</li>',
+      's3.j1.role':      'Product Manager & AI Lead',
+      's3.j1.company':   'K10 Mobility',
+      's3.j1.body':      '<li>Desarrollo de Kai, el agente conversacional de ventas integrado con el sistema de reservas.</li><li>Diseño de flujos de producción con IA generativa y agéntica para la creación de contenido, la gestión de campañas en Meta Ads y la atención al cliente, mejorando la eficiencia operativa.</li><li>Estrategia y gestión del ecosistema de contenidos en redes sociales (Instagram, Facebook): planificación editorial, producción, publicación y seguimiento de rendimiento.</li><li>Coordinación directa con los equipos de operaciones y marketing para alinear la comunicación y las campañas de captación con la realidad del servicio.</li>',
+      's3.j2.role':      'Events Project Manager',
+      's3.j2.company':   'Polkadot Blockchain Academy — Worldwide',
+      's3.j2.body':      '<li>Coordinación integral de campus educativos internacionales sobre blockchain y Web3 en Europa y Asia: programas de 4 semanas, +200 participantes de distintos países y culturas, 3 tracks académicos simultáneos y más de 10 actividades complementarias por edición.</li><li>Gestión logística end-to-end en múltiples continentes: selección y negociación de proveedores, alojamiento, catering, transporte y operación en entornos culturalmente diversos.</li><li>Desarrollo de identidad visual y concepto.</li><li>Liderazgo de equipos de más de 50 personas en modalidad remote-first y múltiples zonas horarias; gestión de presupuesto y reporting post-proyecto.</li><li>Supervisión de producción audiovisual, streaming y entregables multimedia para plataformas digitales.</li>',
+      's3.j3.role':      'Project Manager',
+      's3.j3.company':   'Ibiza Global Radio — Ibiza',
+      's3.j3.body':      '<li>Coordinación de producción y operaciones para plataforma con audiencia global de 1M: 2 emisoras FM, canal de TV y plataforma de streaming.</li><li>Diseño y coordinación de programación, musicalización y contenidos editoriales para las emisoras.</li><li>Gestión de agenda y coordinación con más de 30 colaboradores externos (artistas, DJs, periodistas, creadores), alineando cronogramas y directrices editoriales.</li><li>Liderazgo del equipo técnico interno para transmisiones en directo y coberturas especiales.</li><li>Coordinación de logística de producción y cobertura audiovisual del festival anual.</li>',
+      's3.j4.role':      'Head of Production',
+      's3.j4.company':   'adLIB! — América Latina · Europa',
+      's3.j4.body':      '<li>Producción y coordinación de campus y eventos itinerantes para el sector blockchain y Web3 en América Latina y Europa: hasta 500 participantes por edición.</li><li>Planificación integral de formato, logística, hospitality y operación diaria.</li><li>Desarrollo de identidad de proyecto, contenidos y materiales de comunicación.</li><li>Coordinación de equipos de hasta 20 personas; gestión de cronogramas, presupuestos y reporting de cierre.</li>',
+      's3.j5.role':      'Coordinador de Producción',
+      's3.j5.company':   'Accelerate Podcast by Meta (Collage Agency)',
+      's3.j5.body':      '<li>Coordinación integral de 11 ediciones del podcast oficial de Meta México para ejecutivos de empresas que utilizan herramientas de Meta.</li><li>Gestión de timelines, agendas y confirmación de invitados ejecutivos de alto perfil.</li><li>Supervisión de postproducción y distribución digital multiplataforma.</li>',
+      's3.j6.role':      'Project Manager',
+      's3.j6.company':   'Delta 90.3 FM · Buenos Aires',
+      's3.j6.note':      'Simultáneo con Led.fm: 2013 – 2021',
+      's3.j6.body':      '<li>Coordinación de producción y operaciones de emisora musical: programación, musicalización y contenidos en directo.</li><li>Gestión de agenda editorial y alineamiento de directrices con el equipo artístico.</li><li>Coordinación de equipos artísticos, técnicos, operativos y comerciales (hasta 15 personas).</li><li>Producción de transmisiones en directo, activaciones especiales y coberturas de conciertos y festivales de gran formato.</li>',
+      's3.j7.role':      'Product Owner',
+      's3.j7.company':   'Led.fm — Plataforma de Radio Digital',
+      's3.j7.note':      'Simultáneo con Delta 90.3 FM',
+      's3.j7.body':      '<li>Gestión artística y operativa: diseño de formato y programación de plataforma de radio digital.</li><li>Coordinación de equipos artísticos, técnicos y comerciales.</li><li>Desarrollo del catálogo musical e identidad editorial de la plataforma.</li>',
+      's3.j8.role':      'Productor de Eventos',
+      's3.j8.company':   'Eurínome (Agencia) · Buenos Aires',
+      's3.j8.body':      '<li>Producción de eventos culturales para el Gobierno de la Provincia de Buenos Aires y la Ciudad Autónoma de Buenos Aires.</li><li>Coordinación artística y logística: gestión de artistas, técnicos, venues y proveedores.</li><li>Operación en vivo: montaje, supervisión de producción y desmontaje de eventos de gran formato.</li>',
       's4.skills.label': 'Recursos & Formación',
       's4.sk1.name':     'Herramientas<br/><span>& IA</span>',
       's4.sk1.tags':     'Claude · Gemini · Higgsfield<br/>Notion · Asana · Canva<br/>Eventbrite · Google WS<br/>Discord · Slack',
@@ -850,8 +859,9 @@
       's4.availability': 'Disponible para proyectos locales e internacionales',
     },
     en: {
-      'title':           'Mela Meliton — Events Producer',
-      'hero.profession': 'Producer. Events & Content.',
+      'title':           'Mela Meliton — Project Manager',
+      'hero.profession': 'Project Manager.',
+      'hero.profile':    'Project Manager with a track record in international, cross-industry environments — media, music, entertainment, and technology. I manage projects end-to-end — teams, budgets, vendors, timelines, content — and work equally well remotely or on-site. Recently, I integrated agentic AI as an operational layer: I design workflows and tools that improve project and team performance.',
       's2.label':        'Expertise',
       's2.i1.title':     'Live Event<br/><span>Production</span>',
       's2.i1.tags':      'Concerts · Conferences · Summits<br/>Festivals · Retreats<br/>Europe · LATAM · Asia',
@@ -864,30 +874,32 @@
       's2.i5.title':     'Artist<br/><span>Management</span>',
       's2.i5.tags':      'Artists · Speakers<br/>Hospitality · Backstage',
       's3.label':        'Experience',
-      's3.j1.role':      'Events Manager',
-      's3.j1.company':   'Polkadot Blockchain Academy — Worldwide',
-      's3.j1.body':      '<li>Full production of 2 PBA Campus editions (Switzerland and Indonesia): 200+ international participants, 3 simultaneous academic tracks, and 10+ social activities per edition.</li><li>End-to-end logistics coordination across two continents: venue scouting, accommodation, catering, transportation, and local vendor management.</li><li>Budget management and coordination of teams of up to 20 people in remote-first mode across multiple time zones.</li><li>Oversight of audiovisual production, recordings, streaming, and multimedia deliverables for digital platforms.</li><li>Development of visual identity, operational documentation, and post-event reporting.</li>',
-      's3.j2.role':      'Platform Coordinator',
-      's3.j2.company':   'Ibiza Global Radio — Ibiza',
-      's3.j2.body':      '<li>Content production coordination for an international platform with a global audience of 1M: 2 FM stations, TV channel, and streaming platform.</li><li>Communication management with artists, DJs, hosts, journalists, and external creators, aligning editorial direction and schedules.</li><li>Design and coordination of programming, music selection, and content scripts for the stations.</li><li>Coordination of live broadcasts and audiovisual coverage of the annual festival.</li><li>Management of the in-house technical team and production logistics. (Simultaneous with adLIB! until Feb 2024)</li>',
-      's3.j3.role':      'Head of Production',
-      's3.j3.company':   'adLIB! — Latin America · Europe',
-      's3.j3.body':      '<li>Production of 2 editions of itinerant academic campuses and multiple events across Latin America and Europe: product launches, meetups, conferences, and retreats, with up to 500 attendees.</li><li>Full management of format, venues, content, visual identity, logistics, hospitality, and day-to-day operations.</li><li>Coordination of teams of up to 20 people, timelines, budgets, and post-event reporting.</li>',
-      's3.j4.role':      'Production Coordinator',
-      's3.j4.company':   'Accelerate Podcast — Facebook / Collage Agency',
-      's3.j4.body':      '<li>Full coordination of 11 episodes of Facebook Mexico\'s official podcast for executives of companies using Meta tools.</li><li>Management of timelines, schedules, hosts, high-profile guests, post-production, and digital distribution.</li>',
-      's3.j5.role':      'General Coordinator',
-      's3.j5.company':   'Delta 90.3 FM · Led.fm — Buenos Aires',
-      's3.j5.body':      '<li>General coordination of programming, music curation, and artistic, technical, operational, and commercial teams at Delta 90.3 FM, including hosts and journalists.</li><li>Live event production, special activations, and live broadcasts of concerts and festivals.</li><li>Artistic and operational direction at Led.fm: format design, programming, and team coordination. (Concurrent with Led.fm from 2013)</li>',
-      's3.j6.role':      'Cultural Events Producer',
-      's3.j6.company':   'Eurínome Agency — Buenos Aires',
-      's3.j6.body':      '<li>Cultural event production for the Government of the Province of Buenos Aires and the Autonomous City of Buenos Aires.</li><li>Artistic coordination, logistics, hospitality, and live production.</li>',
-      's3.j7.role':      'Artistic Director',
-      's3.j7.company':   'Kabul 107.9 FM & Spika 103.1 FM — Buenos Aires',
-      's3.j7.body':      '<li>General coordination of programming, music curation, and artistic, technical, operational, and commercial teams, including hosts and journalists.</li><li>Live event production, special activations, and live broadcasts of concerts and festivals.</li>',
-      's3.j8.role':      'General Producer',
-      's3.j8.company':   'Metrodance 95.1 FM — Buenos Aires',
-      's3.j8.body':      '<li>General coordination of programming, music curation, and artistic, technical, operational, and commercial teams, including hosts and journalists.</li><li>Live event production, special activations, and live broadcasts of concerts and festivals.</li>',
+      's3.j1.role':      'Product Manager & AI Lead',
+      's3.j1.company':   'K10 Mobility',
+      's3.j1.body':      '<li>Development of Kai, an AI-powered conversational sales agent integrated with the booking system.</li><li>Design of production workflows using generative and agentic AI for content creation, Meta Ads campaign management, and customer support, improving operational efficiency.</li><li>Strategy and management of the social media content ecosystem (Instagram, Facebook): editorial planning, production, publishing, and performance tracking.</li><li>Direct coordination with operations and marketing teams to align communication and acquisition campaigns with service reality.</li>',
+      's3.j2.role':      'Events Project Manager',
+      's3.j2.company':   'Polkadot Blockchain Academy — Worldwide',
+      's3.j2.body':      '<li>End-to-end coordination of international educational campuses on blockchain and Web3 across Europe and Asia: 4-week programs, 200+ participants from diverse countries and cultures, 3 simultaneous academic tracks, and 10+ complementary activities per edition.</li><li>End-to-end logistics management across multiple continents: vendor selection and negotiation, accommodation, catering, transportation, and operations in culturally diverse environments.</li><li>Visual identity and concept development.</li><li>Leadership of teams of 50+ people in remote-first mode across multiple time zones; budget management and post-project reporting.</li><li>Oversight of audiovisual production, streaming, and multimedia deliverables for digital platforms.</li>',
+      's3.j3.role':      'Project Manager',
+      's3.j3.company':   'Ibiza Global Radio — Ibiza',
+      's3.j3.body':      '<li>Production and operations coordination for a platform with a global audience of 1M: 2 FM stations, TV channel, and streaming platform.</li><li>Design and coordination of programming, music curation, and editorial content for the stations.</li><li>Schedule management and coordination with 30+ external collaborators (artists, DJs, journalists, creators), aligning timelines and editorial guidelines.</li><li>Leadership of the internal technical team for live broadcasts and special coverage.</li><li>Production logistics coordination and audiovisual coverage of the annual festival.</li>',
+      's3.j4.role':      'Head of Production',
+      's3.j4.company':   'adLIB! — Latin America · Europe',
+      's3.j4.body':      '<li>Production and coordination of campuses and itinerant events for the blockchain and Web3 sector across Latin America and Europe: up to 500 participants per edition.</li><li>End-to-end planning of format, logistics, hospitality, and daily operations.</li><li>Project identity development, content, and communication materials.</li><li>Coordination of teams of up to 20 people; timeline, budget, and closing report management.</li>',
+      's3.j5.role':      'Production Coordinator',
+      's3.j5.company':   'Accelerate Podcast by Meta (Collage Agency)',
+      's3.j5.body':      '<li>End-to-end coordination of 11 editions of Meta Mexico\'s official podcast for executives of companies using Meta tools.</li><li>Timeline, schedule, and high-profile executive guest confirmation management.</li><li>Post-production oversight and multiplatform digital distribution.</li>',
+      's3.j6.role':      'Project Manager',
+      's3.j6.company':   'Delta 90.3 FM · Buenos Aires',
+      's3.j6.note':      'Simultaneous with Led.fm: 2013 – 2021',
+      's3.j6.body':      '<li>Production and operations coordination for a music radio station: programming, music curation, and live content.</li><li>Editorial schedule management and alignment with the artistic team.</li><li>Coordination of artistic, technical, operational, and commercial teams (up to 15 people).</li><li>Live broadcast production, special activations, and coverage of large-format concerts and festivals.</li>',
+      's3.j7.role':      'Product Owner',
+      's3.j7.company':   'Led.fm — Digital Radio Platform',
+      's3.j7.note':      'Simultaneous with Delta 90.3 FM',
+      's3.j7.body':      '<li>Artistic and operational management: format design and programming for a digital radio platform.</li><li>Coordination of artistic, technical, and commercial teams.</li><li>Development of the music catalog and editorial identity of the platform.</li>',
+      's3.j8.role':      'Events Producer',
+      's3.j8.company':   'Eurínome (Agency) · Buenos Aires',
+      's3.j8.body':      '<li>Cultural event production for the Government of the Province of Buenos Aires and the Autonomous City of Buenos Aires.</li><li>Artistic and logistics coordination: artist, technical, venue, and vendor management.</li><li>Live operations: setup, production oversight, and teardown of large-format events.</li>',
       's4.skills.label': 'Resources & Training',
       's4.sk1.name':     'Tools<br/><span>& AI</span>',
       's4.sk1.tags':     'Claude · Gemini · Higgsfield<br/>Notion · Asana · Canva<br/>Eventbrite · Google WS<br/>Discord · Slack',
